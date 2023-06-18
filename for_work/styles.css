@@ -1,0 +1,46 @@
+.div1 {
+    background-color:silver;
+    height: 900px;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.front_card {
+    position: relative;
+    right: 340px;
+    bottom: 160px
+}
+
+.back_card {
+    position: relative;
+    right: 700px;
+    top: 130px;
+}
+
+.fortext {
+    /* height: 50px;
+    width: 600px;
+    background-color: aqua;
+    font-size: 40px;
+    position: relative;
+    bottom: 50px;
+    right: 900px; */
+    font-size: 30px;
+    background-color: aqua;
+    height: 50px;
+    width: 300px;
+    position: absolute;
+    bottom: 80%;
+    right: 190%;
+    transform: translate(-50%, -50%);
+}
+
+.div2 {
+    position: relative;
+}
