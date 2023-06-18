@@ -1,5 +1,5 @@
 .div1 {
-    background-color:silver;
+    background-color:white;
     height: 900px;
     width: 50%;
     display: flex;
@@ -24,23 +24,39 @@
 }
 
 .fortext {
-    /* height: 50px;
-    width: 600px;
-    background-color: aqua;
-    font-size: 40px;
-    position: relative;
-    bottom: 50px;
-    right: 900px; */
-    font-size: 30px;
-    background-color: aqua;
+    font-size: 35px;
+    color: white;
+    font-family: 'Space Grotesk', sans-serif;
+    /* font-weight: 300; */
+    /* background-color: aqua; */
     height: 50px;
-    width: 300px;
+    width: 400px;
     position: absolute;
-    bottom: 80%;
-    right: 190%;
+    bottom: 225px;
+    right: 135%;
     transform: translate(-50%, -50%);
 }
 
 .div2 {
     position: relative;
+}
+
+.first_circle {
+    background: white;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    position:absolute;
+    bottom:335px;
+    right: 1160px;
+}
+
+.second_circle {
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    position:absolute;
+    bottom:349px;
+    right: 1130px;
 }
