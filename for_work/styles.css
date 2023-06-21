@@ -1,62 +1,311 @@
-.div1 {
-    background-color:white;
-    height: 900px;
-    width: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: left;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.front_card {
-    position: relative;
-    right: 340px;
-    bottom: 160px
-}
-
-.back_card {
-    position: relative;
-    right: 700px;
-    top: 130px;
-}
-
-.fortext {
-    font-size: 35px;
-    color: white;
+body{
+    width: 100vw;
+    height: 100vh;
     font-family: 'Space Grotesk', sans-serif;
-    /* font-weight: 300; */
+    /* display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: row; */
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+/* this is the main class for the main div */
+.container {
+    /* background-color:blue; */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.cards_pics {
+    /* background-color: red; */
+    border: 4px solid green;
+    width: 60%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    /* position: relative; */
+    /* flex-direction: row-reverse; */
+}
+
+.picture {
+    border: 4px solid orange;
+    width: 66%;
+    height: 100%;
+}
+
+/* .front_card {
+background-color: yellow;
+/* display: flex; */
+/* } */
+
+/* this class for the main picture is the big one */
+.main_pic {
+    /* background-size: cover; */
+    /* height: 100%; */
+    width: 100%;
+    /* max-width: 400px; */
+    min-height: 100%;
+    /* height: auto; */
+    /* display: flex; */
+    /* align-items: flex-start;
+    justify-content: flex-start; */
+}
+
+/* this class for label tag */
+.cardholder_name {
+    /* margin-right: 22%; */
+    /* background-color: aquamarine; */
+    /* display: flex; */
+    /* justify-content: flex-start; */
+    /* align-items: flex-start; */
+    /* position: absolute; */
+}
+
+.card_number {
+    /* margin-right:26% */
+}
+
+.label {
+    color: hsl(278, 68%, 11%);
+    font-size: 130%;
+    font-weight: bolder;
+}
+
+/* this is for the main div of form */
+.form {
+    border: 4px solid yellow;
+    width:40%;
+    height: 30%;
+    /* margin-left: 20%; */
+    display: flex;
+    align-items: flex-start;
+    align-content: flex-start;
+    justify-content: flex-start;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+/* this is the main class for the label and input tags */
+.name {
+    background-color:aqua;
+    width: 45%;
+    /* height:12%; */
+    display: flex;
+    align-items: space-around;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+    flex-direction: column;
+    /* max-width: 30%; */
+    /* min-width: 30%; */
+    /* max-height: 12%; */
+    /* position: relative; */
+    /* align-content: space-between; */
+}
+
+/* this class for input tag */
+.divinput {
+    /* background-color:turquoise; */
+    width: 100%;
+    /* height: 60%; */
+    margin: 0;
+    padding: 0;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+
+/* this class for the input */
+.input {
     /* background-color: aqua; */
+    width: 100%;
+    /* min-width: 100%; */
+    height: 100%;
+    border: 2px solid hsl(279, 6%, 55%);
+    border-radius: 10px;
+}
+
+.lastinput {
+    background-color: green;
+    width: 45%;
+    /* max-height: 12%; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    /* max-width: 30%; */
+}
+
+.cvc {
+    /* background-color: yellow; */
+    width: 50%;
+    /* height: 100%; */
+    display: flex;
+    /* justify-content: flex-end; */
+    /* align-items: flex-end; */
+    flex-direction: column;
+    /* margin-right: 40%; */
+}
+
+.cvcdiv {
+    /* background-color: black; */
+    width:100%;
     height: 50px;
-    width: 400px;
+    border: 2px solid hsl(279, 6%, 55%);
+    border-radius: 10px;
+}
+
+.expdate {
+    /* background-color: orange; */
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    /* padding: 0; */
+    /* margin-left: 30%; */
+}
+
+.inputexpdate {
+    /* background-color: red; */
+    width: 90%;
+    /* height: 100%; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.mounth {
+    /* background-color: black; */
+    border: 2px solid hsl(279, 6%, 55%);
+    border-radius: 10px;
+    width: 45%;
+    height: 50px;
+}
+.year {
+    /* background-color: black; */
+    border: 2px solid hsl(279, 6%, 55%);
+    border-radius: 10px;
+    width: 45%;
+    height: 50px;
+    /* margin-right: 15px; */
+}
+
+.datediv {
+    /* background-color: black; */
+    border: 2px solid hsl(279, 6%, 55%);
+    border-radius: 10px;
+    width: 40%;
+    height: 50px;
+}
+
+::placeholder {
+    color: hsl(279, 6%, 55%);
+    font-size: 170%;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 500;
+}
+
+.button {
+    width: 100%;
+    height: 50px;
+    background-color: hsl(278, 68%, 11%);
+    border-radius: 10px;
+    color:white;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 130%;
+    font-weight: 500;
+}
+input[type="text"]
+{
+    color: hsl(278, 68%, 11%);
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 500;
+    font-size: 130%;
+}
+
+.cards {
+    /* background-color: red; */
+    border: 4px solid red;
+    border-radius: 10px;
+    width: 1000px;
+    height: 1000px;
     position: absolute;
-    bottom: 225px;
-    right: 135%;
-    transform: translate(-50%, -50%);
+    top: 20%;
+    left: 14%;
+    /* display: flex;
+    justify-content: flex-start;
+    align-items: flex-start; */
 }
 
-.div2 {
-    position: relative;
+/* this is media query that change the settings of a class in a specific  */
+@media (max-width: 1000px) {  
+    .cards_pics {
+        height: 30%;
+        width: 100%;
+        min-width: 50%;
+        display: flex;
+        flex-direction: column;
+    }
+    .form {
+        width: 100%;
+        /* height: 100%; */
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+    .divinput {
+        width: 100%;
+    }
+    .container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        align-content: flex-start;
+    }
 }
 
-.first_circle {
-    background: white;
-    border-radius: 50%;
-    width: 45px;
-    height: 45px;
-    position:absolute;
-    bottom:335px;
-    right: 1160px;
+@media (max-width: 1756px) {
+    .name {
+        max-width: 45%;
+        width: 45%;
+    }
+    .lastinput {
+        max-width: 45%;
+        width: 45%;
+    }
 }
 
-.second_circle {
-    border: 1px solid white;
-    border-radius: 50%;
-    width: 15px;
-    height: 15px;
-    position:absolute;
-    bottom:349px;
-    right: 1130px;
+@media (max-width: 1157px) {
+    .name {
+        max-width: 45%;
+        width: 45%;
+    }
+    .lastinput {
+        max-width: 45%;
+        width: 45%;
+    }
+    .label {
+        font-size: 100%;
+    }
+}
+
+@media (max-width: 700px) {
+    .label {
+        font-size: 70%;
+    }
 }
