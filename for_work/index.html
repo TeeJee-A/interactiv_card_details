@@ -1,53 +1,48 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap" rel="stylesheet">
-</head>
-
-<body>
-    <div class="container">
-        <div class="cards_pics">
-            <img src="../images/bg-main-desktop.png" alt="background main desktop" class="main_pic">
-        </div>
-        <div style="height: 15%;"></div>
-        <form class="form">
-            <!-- <div class="form"> -->
-            <div class="name">
-                <div class="divinput">
-                    <label for="name" class="label">CARDHOLDER NAME</label>
-                    <input type="text" id="name" name="user_name" placeholder="e.g. Jane Appleseed" class="input" />
-                </div>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="cards_pics">
+                <img src="../images/bg-main-desktop.png" alt="background main desktop" class="main_pic">
             </div>
-            <div class="name">
-                <div class="divinput">
-                    <label for="name" class="label">CARD NUMBER</label>
-                    <input type="text" id="number" name="user_number" placeholder="e.g. 1234 5678 9123 0000"
-                        class="input" />
-                </div>
-            </div>
-            <div class="lastinput"> <!--the main div of the last input (EXP DATE) and CVD-->
-                <div class="expdate"> <!--this div is for EXP DATE-->
-                    <label for="text" class="label">DATE (MM/YY)</label>
-                    <div class="inputexpdate">
-                        <input id="mounth" type="text" placeholder="MM" class="mounth" name="mounth"/>
-                        <input id="year" type="text" placeholder="YY" class="year" name="year" />
+            <div style="height: 15%;"></div>
+            <form class="form" id="form">
+                <div class="name">
+                    <div class="divinput">
+                        <label for="name" class="label">CARDHOLDER NAME</label>
+                        <input type="text" oninput="username()" id="name" name="user_name" placeholder="e.g. Jane Appleseed" class="input"/>
                     </div>
                 </div>
-                <div class="cvc">
-                    <label for="text" class="label">CVC</label>
-                    <input id="cvc" type="text" placeholder="e.g. 123" class="cvcdiv" name="cvc">
+                <div class="name">
+                    <div class="divinput">
+                        <label for="name" class="label">CARD NUMBER</label>
+                        <input type="text" oninput="usernumber()" id="number" name="user_number" placeholder="e.g. 1234 5678 9123 0000" class="input"/>
+                    </div>
                 </div>
-            </div>
-            <div class="name">
-                <button class="button">Confirm</button>
-            </div>
-            <!-- </div> -->
-        </form>
-    </div>
-
+                <div class="lastinput"> <!--the main div of the last input (EXP DATE) and CVD-->
+                    <div class="expdate"> <!--this div is for EXP DATE-->
+                        <label for="text" class="label">DATE (MM/YY)</label>
+                        <div class="inputexpdate">
+                            <input type="text" oninput="usermounth()" id="mounth" placeholder="MM" class="mounth" name="user_mounth"/>
+                            <input type="text" oninput="useryear()" id="year" placeholder="YY" class="year" name="user_year"/>
+                        </div>
+                    </div>
+                    <div class="cvc">
+                        <label for="text" class="label">CVC</label>
+                        <input type="text" oninput="usercvc()" id="cvc" placeholder="e.g. 123" class="cvcdiv" name="user_cvc"/>
+                    </div>
+                </div>
+                <div id="sub" class="name">
+                    <button type="submit" class="button">Confirm</button>
+                </div>
+            </form>
+        </div>
+    </body>
     <script src="first.js"></script>
-</body>
-
 </html>
